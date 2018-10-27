@@ -67,6 +67,9 @@ table {
 	border-left: 2px dashed rgb(71, 44, 44);
 }
 
+.imgFrame {
+	border: 4px solid 
+}
 
 .home .homeLink,
 .about .aboutLink,
