@@ -30,17 +30,56 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } 
+
+/*отдельные классы для форматирования различных элементов страницы*/
+
+
+.button {
+	text-decoration: none;
+	color: brown;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+
+.button-nav {
+	background: rgb(160,179,145);
+	color: rgb(71,44,44);
+	transition: all 0.5s;
+}
+
+.button-nav:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+
+.floatLeft {
+	float: left;
+}
+
+
+.home .homeLink,
+.about .aboutLink,
+.products .productsLink,
+.contacts .contactsLink {
+	color: rgb(160,179,145);
+	background-color: rgb(71,44,44);
+}
+
+
 /* конец кода сброса стилей браузера */
 
 body {
-	background-color: #fff4d5;
-	color: brown;
+	background-color: #f0ebe1;
+	color: rgb(151,86,184);
 }
 
 
 /*верх страницы*/
 header {
-	border: 1px solid black;
+
 	font-family: "Copperplate Light", "Copperplate Gothic Light", serif;
 	font-size: 5rem;
 	display: flex;
@@ -52,16 +91,23 @@ header div {
 }
 
 nav {
-	border: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	font-size: 1.3rem;
+	background-color: rgb(105,128,85);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 nav a {
-	text-decoration: none;
-	color: brown;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
 }
 
-
+/*Раздел контента*/
 
 main h1, main h2, main h3 {
 	font-family: Geneva, Arial, Helvetica, sans-serif;
@@ -81,4 +127,4 @@ main p {
 }
 
 
-/*отдельные классы для форматирования различных элементов страницы*/
+
