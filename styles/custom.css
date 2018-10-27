@@ -68,7 +68,8 @@ table {
 }
 
 .imgFrame {
-	border: 4px solid 
+	border: 4px solid rgb(160,179,145);
+	border-radius: 20px;
 }
 
 .home .homeLink,
