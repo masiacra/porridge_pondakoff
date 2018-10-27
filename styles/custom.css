@@ -45,7 +45,7 @@ table {
 .button-nav {
 	background: rgb(160,179,145);
 	color: rgb(71,44,44);
-	transition: all 0.5s;
+
 }
 
 .button-nav:hover {
@@ -57,6 +57,10 @@ table {
 
 .floatLeft {
 	float: left;
+}
+
+.borderLeft {
+	border-left: 2px dashed rgb(71, 44, 44);
 }
 
 
@@ -111,6 +115,7 @@ nav a {
 
 main h1, main h2, main h3 {
 	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
 }
 
 main h1 {
@@ -126,5 +131,27 @@ main p {
 	font-size: 1.2rem;
 }
 
+main {
+	display: flex;
+}
 
+.content {
+	flex: 4;
+}
+
+.advertisement {
+	order: -1;
+	flex: 1;
+	background-color: #fff4d5;
+}
+
+.news {
+	flex: 2;
+
+}
+
+/*Подвал*/
+footer {
+	
+}
 
