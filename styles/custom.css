@@ -31,3 +31,54 @@ table {
 	border-spacing: 0;
 } 
 /* конец кода сброса стилей браузера */
+
+body {
+	background-color: #fff4d5;
+	color: brown;
+}
+
+
+/*верх страницы*/
+header {
+	border: 1px solid black;
+	font-family: "Copperplate Light", "Copperplate Gothic Light", serif;
+	font-size: 5rem;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header div {
+	margin: auto;
+}
+
+nav {
+	border: 1px solid black;
+	font-size: 1.3rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: brown;
+}
+
+
+
+main h1, main h2, main h3 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+main h1 {
+	font-size: 1.4rem;
+}
+
+main h2 {
+	font-size: 1.3rem;
+}
+
+main p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.2rem;
+}
+
+
+/*отдельные классы для форматирования различных элементов страницы*/
