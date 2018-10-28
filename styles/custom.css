@@ -66,10 +66,6 @@ table {
 	clear: both;
 }
 
-.borderLeft {
-	border-left: 1px dashed rgb(71, 44, 44);
-}
-
 .marginLeft52perc {
 	margin-left: 52%;
 }
@@ -157,6 +153,7 @@ main p {
 
 main {
 	display: flex;
+	flex-flow: row wrap;
 	max-width: 900px;
 	margin: 0 auto;
 
@@ -168,8 +165,10 @@ main img {
 
 /*основной контент*/
 .content {
-	flex: 4;
+	flex: 4 1 436px;
 	padding: 10px;
+	border-left: 1px dashed rgb(71, 44, 44);
+	border-right: 1px dashed rgb(71, 44, 44);
 }
 
 .content blockquote {
@@ -184,18 +183,22 @@ main img {
 /*раздел рекламы*/
 .advertisement {
 	order: -1;
-	flex: 1;
+	flex: 1 1 109px;
 	background-color: #fff4d5;
 }
 
 
 /*боковая панель новостей*/
 .news {
-	flex: 2;
-	margin: 0;
-	padding: 0;
+	flex: 2 1 218px;
+
 	padding: 10px;
 	text-align: center;
+}
+
+.news ul {
+	margin: 0;
+	padding: 0;
 }
 
 .news li {
@@ -224,9 +227,113 @@ footer {
 }
 
 /*стили для планшетных компьютеров*/
-@media (min-width: 481px) and (max-width:768px) {
+@media (min-width: 654px) and (max-width:762px) {
+/*Верх страницы*/
+	header {
+		font-size: 4rem;
+	}
+	
+	nav {
+		font-size: 1.2rem;
+	}
+
+/*Основной контент*/
+	.advertisement {
+		order: 3;
+		height: 400px;
+		border-top:  1px dashed rgb(71, 44, 44);
+	}
+	
+	.content {
+		border-left: none;
+
+	}
+
+
+}
+
+
+@media (min-width: 481px) and (max-width:653px) {
+
+/*Верх страницы*/
+	
+	header {
+		font-size: 3rem;
+	}
+	
+	nav {
+		font-size: 1.1rem;
+	}
+
+
+/*Основной контент*/
+	main h1, main h2, main h3 {
+		font-size: 1.3rem;
+	}
+	
+	main p {
+		line-height: 1.6rem;
+	}
+	
+	
+	
+	.content {
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px dashed rgb(71, 44, 44);
+	}
+	
+	.content blockquote {
+		margin-left: 50%;
+	}
+	
+	.advertisement {
+		order: 3;
+	}
+	
+	.news {
+		border-right: 1px dashed rgb(71, 44, 44);
+	}
+
 }
 
 /*стили для мобильных телефонов*/
 @media (max-width:480px) {
+
+/*Верх страницы*/
+	header {
+		font-size: 2.5rem;
+	}
+
+/*Основной контент*/
+	
+	main {
+		flex-flow: column;
+	}
+	
+	main h1, main h2, main h3 {
+		font-size: 1.22rem;
+	}
+	
+	main p{
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+	}
+	
+	.content {
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px dashed rgb(71, 44, 44);
+	
+	}
+	
+	.news {
+		border-bottom: 1px dashed rgb(71, 44, 44);
+
+	}
+	
+	.advertisement {
+		order: 3;
+	}
 }
+
