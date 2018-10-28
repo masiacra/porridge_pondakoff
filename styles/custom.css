@@ -31,6 +31,9 @@ table {
 	border-spacing: 0;
 } 
 /* конец кода сброса стилей браузера */
+
+/*общие стили для всех размеров браузера*/
+
 /*отдельные классы для форматирования различных элементов страницы*/
 
 
@@ -76,6 +79,8 @@ table {
 	border-radius: 20px;
 	margin-top: 10px;
 	margin-right: 10px;
+	margin-bottom: 20px;
+
 }
 
 .home .homeLink,
@@ -132,6 +137,8 @@ nav a {
 main h1, main h2, main h3 {
 	font-family: Geneva, Arial, Helvetica, sans-serif;
 	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 main h1 {
@@ -145,6 +152,7 @@ main h2 {
 main p {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 1.2rem;
+	line-height: 1.8rem;
 }
 
 main {
@@ -158,6 +166,7 @@ main img {
 	max-width: 50%;
 }
 
+/*основной контент*/
 .content {
 	flex: 4;
 	padding: 10px;
@@ -172,13 +181,15 @@ main img {
 	box-shadow: 3px 3px 3px rgb(0, 0, 0, .8);
 	padding: 5px;
 }
-
+/*раздел рекламы*/
 .advertisement {
 	order: -1;
 	flex: 1;
 	background-color: #fff4d5;
 }
 
+
+/*боковая панель новостей*/
 .news {
 	flex: 2;
 	margin: 0;
@@ -192,6 +203,18 @@ main img {
 	margin-bottom: 20px;
 }
 
+.news .button {
+	display: block;
+	margin-top: 15px;
+	background-color: #7bcdd9;
+	color: #fff4d5;
+}
+
+.news .button:hover {
+	background-color: yellow;
+	color: blue;
+}
+
 /*Подвал*/
 footer {
 	text-align: center;
@@ -200,3 +223,10 @@ footer {
 	color: rgb(240,235,225);
 }
 
+/*стили для планшетных компьютеров*/
+@media (min-width: 481px) and (max-width:768px) {
+}
+
+/*стили для мобильных телефонов*/
+@media (max-width:480px) {
+}
