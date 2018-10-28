@@ -79,6 +79,10 @@ table {
 
 }
 
+.widthAuto {
+	max-width: 100%;
+}
+
 .home .homeLink,
 .about .aboutLink,
 .products .productsLink,
